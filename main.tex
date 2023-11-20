@@ -1,7 +1,7 @@
 %\documentclass[prd,twocolumn,aps,psfig,showpacs,nofootinbib,nobibnotes,superscriptaddress,preprintnumbers,times]{revtex4}
 \documentclass[prd,twocolumn,aps,psfig,nofootinbib,nobibnotes,superscriptaddress,preprintnumbers,times]{revtex4-2}
 \setlength{\topmargin}{-14mm}
-\usepackage{graphicx,bm,color,amsmath,amssymb, mathtools,subcaption,float,dblfloatfix}
+\usepackage{graphicx,bm,color,amsmath,amssymb, mathtools,subcaption}
 \graphicspath{{./fig/}}
 
 \usepackage[hidelinks]{hyperref}
@@ -514,15 +514,15 @@ The scale factor, as described in Eq.\ (4) of Ref.\ \cite{Fujita:2018}, is
 \begin{equation}\label{eqn:scale_fac}
     a(\tau) = 
     \begin{cases}
-            -1(H_{\inf}\tau) & \tau < \tau_r \\
-            a_r \tau/\tau_r & \tau > \tau_r \\
+        -1/(H_{\inf}\tau) & \tau < \tau_r \\
+        a_r \tau/\tau_r & \tau > \tau_r \\
    \end{cases}
 \end{equation}
 where $H_{\inf}$ is the Hubble parameter during inflation when the scale corresponding to the Cosmic Microwave Background exits the Hubble horizon and $a_r$ is the scale factor at the reheating time $\tau_r = 1/(a_r H_{\inf})$. We will assume $\tau_r$ to be fixed in this discussion, while $H_{\inf}$ and $a_r$ may vary. The bounds on $H_{\inf}$ are discussed in Ref.\ \cite{Jiang:2017}, and they will be respected in this paper. The scale factor in this model has a peculiar behavior where it is not defined in the region $(-\tau_r, \tau_r)$ and only takes values outside of that interval. This is to allow for the scale factor and its first derivative to be continuous and to avoid the singularity at $\tau = 0$. % perhaps expalin more about this weird behavior of the conformal time during inflation 
-\begin{figure}[h]
-\includegraphics[scale=0.65]{fig/fig0.pdf}
-\caption{Evolution of the real part of $\overline{h}_k(\tau)$. There is a gap in the domain of the conformal time from $-\tau_r$ to $\tau_r$, but $\overline{h}_k(\tau)$ and $\overline{h}_k'(\tau)$ remain continuous. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the code \cite{GH}.}
-\label{fig:mode}
+\begin{figure}[ht]
+    \includegraphics[scale=0.65]{fig/fig0.pdf}
+    \caption{Evolution of the real part of $\overline{h}_k(\tau)$. There is a gap in the domain of the conformal time from $-\tau_r$ to $\tau_r$, but $\overline{h}_k(\tau)$ and $\overline{h}_k'(\tau)$ remain continuous. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the code \cite{GH}.}
+    \label{fig:mode}
 \end{figure}
 
 Fig.\ \ref{fig:mode} illustrates how a generic mode function would look like, showing  the discontinuity in the conformal time. The behavior in the three regions of $\tau$ are discussed in detail in Ref.\ \cite{Fujita:2018}.
@@ -530,8 +530,8 @@ We will use the mass function from Eq.\ 5 of Ref.\ \cite{Fujita:2018}
 \begin{equation}\label{eqn:mass_case}
     M_{GW}(\tau) = 
     \begin{cases}
-            m & \tau < \tau_m \\
-            0 & \tau > \tau_m \\
+        m & \tau < \tau_m \\
+        0 & \tau > \tau_m
    \end{cases}
 \end{equation} 
 where $\tau_m$ is some conformal time during the radiation dominated era when the mass instantaneously drops to 0. For more discussion about why the time is chosen to be in the radiation dominated era, refer to Footnote 2 of Ref.\ \cite{Fujita:2018}. 
@@ -629,7 +629,7 @@ Since we are interested in the energy density at the present time, we consider $
     \Omega_{GW,0}(f) = \frac{\pi^2f^2}{3a_0^2 H_0^2}\frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{GR}(k) .
 \end{equation}
 In anticipation of our consideration of certain parameters in the next section, we look at the behavior of the energy density as a function of different parameters. Fig.\ \ref{fig:contours}
-\begin{figure}[H]
+\begin{figure}[ht!]
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=.82\linewidth]{fig/fig4a.pdf}  
@@ -666,30 +666,25 @@ The constraints we can place on the SFM model based on NG15 are done by seeing h
 
 \section{Discussion}\label{sec:discussion}
 
-%\onecolumngrid
-
-%\twocolumngrid
-
 In this paper, we discussed how the constant mass and step function mass models of massive gravity can be constrained by the 15-year NANOGrav data set. We note that the selection of the parameters in the step function mass model leads to energy densities that violate the BBN bound for higher frequencies, specifically in the region of frequencies $\gtrsim 10^{-6}$ Hz. We propose that there could be some mechanism that suppresses the energy density of gravitational waves from the primordial era for those frequencies. Something analogous to the damping of the energy density from the free-streaming neutrinos \cite{Weinberg:2004} could be behind such a suppression necessary to respect the BBN bound. 
 
 \onecolumngrid
-\begin{figure}
+\begin{figure*}
 \includegraphics[width=\textwidth]{fig/fig8.pdf} 
 \caption{GWB spectra produced by the CM model \cite{Gumrukcuoglu:2012} (top), GWB produced by the SFM model \cite{Fujita:2018} (bottom), and we show the $2\sigma$ and $4\sigma$ posterior medians for NG15, in darker and lighter orange respectively. The black dotted lines are the GWB spectrum produced by an astrophysical population of inspiraling supermassive black hole binaries with the parameters detailed in Eq.\ A1 of Ref.\ \cite{Afzal:2023}. In the top plot, the red curve is the energy density for a graviton with the same mass as the upper bound found in Ref.\ \cite{Wang:2023} and the blue curve is the same but for Ref.\ \cite{Wu:2023}, and the green curve is the same but for the NG15 frequency limits. In the bottom plot, the blue curve is the GWB spectra fitted to the $2\sigma$ posterior and the red curve is fitted to the $4\sigma$ posterior.}
 \label{fig:GWB}
-\end{figure}
+\end{figure*}
 \twocolumngrid
 
-\begin{figure}[h]
-\includegraphics[width=\linewidth]{fig/fig7.pdf}
-\caption{The energy densities in the bottom plot of Fig.\ \ref{fig:GWB} plotted over the whole frequency range specified in Fig.\ \ref{fig:contours}.}
-\label{fig:supp}
+\begin{figure}[ht]
+    \includegraphics[width=\linewidth]{fig/fig7.pdf}
+    \caption{The energy densities in the bottom plot of Fig.\ \ref{fig:GWB} plotted over the whole frequency range specified in Fig.\ \ref{fig:contours}.}
+    \label{fig:supp}
 \end{figure}
 
 Observations of gravitational waves have mostly ruled out the possibility of gravitons with a very low but nonzero mass, since the expectation that a peak could be present for lower and lower frequencies is becoming more slim, albeit still possible. Therefore, the more plausible possibility of massive gravity is the scenario in which the graviton mass is a non-constant function of time. We have only considered a step function as the time dependent function, but more complicated functions are possible. The mechanism behind such a mass decay would come from the exact nature of the phase transition of the gravitational field. It may be interesting to pursue an investigation to place constraints on the specific evolution of the mass during the phase transition. Then, we would be able to probe the mass evolution and shed insight into the time dependent behavior beyond a step function. 
 
 Additionally, further observations that place constraints on the Hubble rate of expansion, the scale factor, and the time associated with inflation would be able to refute or confirm our theory. Another limitation comes from the fact that the BBN bound is defined in terms of a logarithmic integral of the whole frequency interval of the energy density. The suppression we propose is flat in the log-log scale, which would lead to a non-trivial bound from BBN. In addition to signals we have already observed with interferometers, we expect a more drastic suppression for higher frequencies than we discuss. Future work may investigate the nature of this suppression and propose plausible mechanisms for it.
-
 
 \vspace{2mm}
 {\bf Data availability}---Source code to reproduce all of the figures in this paper is located in our corresponding Github repository \cite{GH}. 
