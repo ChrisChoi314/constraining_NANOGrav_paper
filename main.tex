@@ -421,7 +421,8 @@ $\displaystyle##$\hfil\cr>\cr\sim\cr}}}
 
 \begin{document}
 
-\title{Constraining Models of Massive Gravity Using the NANOGrav 15-Year Data Set}
+% \title{Constraining Time Dependent Massive Gravity with the NANOGrav 15-Year Data Set}
+\title{Reproducing the Stochastic Gravitational Wave Background from the NANOGrav 15-Year Data Set with Massive Gravity}
 
 \date{\today}
 \preprint{N/A}
@@ -445,19 +446,21 @@ $\displaystyle##$\hfil\cr>\cr\sim\cr}}}
 \affiliation{Department of Physics, Carnegie Mellon University, Pittsburgh, PA 15213, USA}
 
 \begin{abstract}
-Convincing evidence of a stochastic gravitational wave background has been found by the NANOGrav collaboration in the 15-Year data set. From this signal, we can evaluate the possibility of its source being from the early universe through the tensor perturbations induced by a massive spin-2 graviton field. We consider a time dependent model of massive gravity, and compare their energy spectra with the signals from the NANOGrav data. We then place bounds on the mass of the gravitons and bounds on the rate of inflation. We show that primordial gravitational waves amplified by time dependent massive gravity is able to explain the data within 1-3 $\sigma$ deviation. However, a suppression mechanism for high frequency modes has to be introduced to obey the BBN bounds. 
+Convincing evidence of a stochastic gravitational wave background has been found by the NANOGrav collaboration in the 15-Year data set. From this signal, we can evaluate the possibility of its source being from the early universe through the tensor perturbations induced by a massive spin-2 graviton field. We consider a time dependent model of massive gravity, and compare their energy spectra with the signals from the NANOGrav data. We then place bounds on the mass of the gravitons and bounds on the rate of inflation. We show that primordial gravitational waves amplified by time dependent massive gravity is able to reproduce the data within 1-3 $\sigma$ deviation. However, a suppression mechanism for high frequency modes has to be introduced to obey the BBN bounds. 
 \end{abstract}
 
 \maketitle
-
+% mention Vdgz discontinuity, and reference other theories of ghost free gravities gabadaze, say "look, hthe reviews". cite trodden 
 \section{Introduction}
 The discovery of a stochastic gravitational wave background (SGWB) based on the data from 15 years of observation of pulsars by the North American Nanohertz Observatory for Gravitational Waves (NANOGrav) collaboration \cite{Agazie:2023} opened up an observational window into looking for signs of new physics \cite{Afzal:2023}. We want to investigate alternatives to the astrophysical explanation, in order to potentially address the shortcomings of our current prevailing theories of General Relativity (GR) and the Standard Model. Thus, we consider the following cosmological scenario that leads to gravitational wave generation in the frequency ranges accessible by NANOGrav. 
 
-Primordial gravitational waves generated during cosmic inflation, freely propagating in the radiation-dominated plasma, are predicted by theory. It is possible that the signatures of these waves we detect could differ from what we expect based on GR. In fact, there is a possibility that the propagation of these primordial gravitational waves could be modified by alternate theories of gravity, including massive gravity (MG), first introduced by Fierz and Pauli in 1939 \cite{Fierz:1939ix}. It would be quite remarkable if a simple\footnote{The modification by a non-zero graviton mass is actually much more difficult than at first glance, due to the Boulware-Deser ghost and other problems showing up for nonlinear formulations of MG which prevent the theory from reducing to GR in the massless limit, and only recently have they been addressed \cite{Hassan:2012a, Hassan:2012b}} modification to a spin-2 field is the explanation behind such a significant phenomenon. 
+Primordial gravitational waves generated during cosmic inflation, freely propagating in the radiation-dominated plasma, are predicted by theory. It is possible that the signatures of these waves we detect could differ from what we expect based on GR. In fact, there is a possibility that the propagation of these primordial gravitational waves could be modified by alternate theories of gravity, including massive gravity (MG), first introduced by Fierz and Pauli in 1939 \cite{Fierz:1939ix}. 
 
-In this paper, we will use the 15-year NANOGrav data set (hereafter NG15), to constrain a model of massive gravity in which the mass is time-dependent, specifically one where the mass takes the form of a step-function of time. This model will be taken from Ref.\ \cite{Fujita:2018} (hereafter the Step Function Mass (SFM) model). We will do away with Lorentz-invariance, and take the model to be the minimal theory of massive gravity \cite{DeFelice:2016, Felice:2016}. This will result in the consideration of just two propagating polarization modes, as we do in GR. Another benefit of this model is that we won't have to consider the Higuchi bound, which ordinarily requires that the ratio of the mass of the graviton to the Hubble scale of inflation be up to an order of unity. We will calculate the energy density of primordial gravitational waves created during or before inflation, at the present time, and compare them to the signals we observe in NG15. 
+Since then, many attempts have been made to construct a consistent non-linear theory of MG. Any purely linear theory suffers from the van Dam-Veltman-Zakharov (vDVZ) discontinuity \cite{vanDam:1970vg,Zakharov:1970cc}, which prevents the theory from reducing to GR in the massless limit. Attempts have been made to address this, like the nonlinear extensions to the Fierz-Pauli theory that exhibit the Vainshtein mechanism \cite{Vainshtein:1972sx}. This has its own set of problems, like the Boulware-Deser ghost and other ghost degrees of freedom \cite{Boulware:1972yco,Dubovsky:2004sg}. This presents a significant obstacle for trying to come up with a consistent theory.
 
-The goal of this paper is to show whether massive gravity, through the amplification of tensor modes of primordial gravitational waves that entered the cosmological horizon before the matter dominated era, are able to reproduce the observed NANOGrav signal.
+Recently, attempts have been made to provide ghost-free nonlinear MG theories, such as the deRham-Gabadaze-Tolley (dRGT) theory \cite{Hassan:2012a, Hassan:2012b, deRham:2010ik,deRham:2010kj}. An alternative approach is to do away with Lorentz invariance, allowing gravitons to form a 3D rotation group, e.g. \cite{Arkani-Hamed:2003pdi, Rubakov:2004eb, Dubovsky:2004sg, Blas:2009my, Rubakov:2008nh, Blas:2007zz, Comelli:2013txa, Langlois:2014jba}. This no longer requires the theory to have five degrees of freedom, and one such model has been proposed on these grounds: the minimal theory of massive gravity (MTMG) \cite{DeFelice:2016, Felice:2016}. This has two propagating degrees of freedom, just like in GR, and this is the model we will consider in this paper. Another benefit of this model is that we won't have to consider the Higuchi bound, which ordinarily requires that the ratio of the mass of the graviton to the Hubble scale of inflation be up to an order of unity.
+
+In this paper, we will consider a time-dependent MTMG model of massive gravity, specifically one in which the graviton mass is a step-function of time as described in Ref.\ \cite{Fujita:2018} (hereafter the Step Function Mass (SFM) model). We will calculate the energy density of primordial gravitational waves created during inflation, at the present time, in the presence of massive gravity and compare it to the signals we observed in the 15-year NANOGrav data set (hereafter NG15). The goal of this paper is to show whether massive gravity, through the amplification of tensor modes of primordial gravitational waves that entered the cosmological horizon before the matter dominated era, is able to reproduce the observed SGWB.
 
 The paper is arranged as follows: in section \ref{sec:setup}, we introduce the model and the assumptions we make. In section \ref{sec:energy}, we derive the energy density and discuss its behavior. In section \ref{sec:results}, we compare the model to the signals detected by NANOGrav. In section \ref{sec:discussion}, we discuss the implications of our findings and discuss future work. Throughout this paper, we use  (--,+,+,+) for the Minkowski metric and we use natural units and set $c = \hbar = k_B = 1$. We also set the present day Hubble parameter $H_0 = h_0\ 100 \km \s^{-1}\Mpc^{-1} = 67.66 \km \s^{-1}\Mpc^{-1}$ and the present day density parameters for radiation, matter, curvature, and dark energy $\{\Omega_r, \Omega_m, \Omega_k, \Omega_\Lambda\} = \{9.182\times10^{-5},0.3111,0,0.6889\}$ to match the latest \textit{Planck} 2018 TT, TE, EE + lowE + lensing + BAO data \cite{Planck:2020}.
 
@@ -498,6 +501,12 @@ where ${\bf k}$ is the comoving momentum, $e^\lambda_{ij}$ are the polarization 
 \end{equation}
 where $a$ is the scale factor, $\overline{h}_k = ah_k$ is defined for convenience, the primes ($\,'$) denote derivatives with respect to $\tau$, and $c_g(\tau)$ is the effective sound speed associated with GWs and may be dependent on time. For this paper, we will set $K = 0$ and $c_g = 1$\footnote{Refer to Sec.\ B2 of Ref.\ \cite{Gumrukcuoglu:2012} for consideration of non-zero $K$ and Sec.\ IV E4 of Ref.\ \cite{Gumrukcuoglu:2012} for consideration of general $c_g$.}.
 
+\begin{figure}[ht]
+    \includegraphics[scale=0.65]{fig/fig0.pdf}
+    \caption{Evolution of the real part of $\overline{h}_k(\tau)$. There is a gap in the domain of the conformal time from $-\tau_r$ to $\tau_r$, but $\overline{h}_k(\tau)$ and $\overline{h}_k'(\tau)$ remain continuous. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the code \cite{GH}.}
+    \label{fig:mode}
+\end{figure}
+
 We consider graviton masses on the order of the Hubble scale, and so the evolution of the GWs during inflation will be important.
 The scale factor, as described in Eq.\ (4) of Ref.\ \cite{Fujita:2018}, is
 \begin{equation}\label{eqn:scale_fac}
@@ -508,12 +517,6 @@ The scale factor, as described in Eq.\ (4) of Ref.\ \cite{Fujita:2018}, is
    \end{cases}
 \end{equation}
 where $H_{\inf}$ is the Hubble parameter during inflation when the scale corresponding to the Cosmic Microwave Background exits the Hubble horizon and $a_r$ is the scale factor at the reheating time $\tau_r = 1/(a_r H_{\inf})$. We will assume $\tau_r$ to be fixed in this discussion, while $H_{\inf}$ and $a_r$ may vary. The bounds on $H_{\inf}$ are discussed in Ref.\ \cite{Jiang:2017}, and they will be respected in this paper. The scale factor in this model has a peculiar behavior where it is not defined in the region $(-\tau_r, \tau_r)$ and only takes values outside of that interval. This is to allow for the scale factor and its first derivative to be continuous and to avoid the singularity at $\tau = 0$. % perhaps expalin more about this weird behavior of the conformal time during inflation 
-\begin{figure}[ht]
-    \includegraphics[scale=0.65]{fig/fig0.pdf}
-    \caption{Evolution of the real part of $\overline{h}_k(\tau)$. There is a gap in the domain of the conformal time from $-\tau_r$ to $\tau_r$, but $\overline{h}_k(\tau)$ and $\overline{h}_k'(\tau)$ remain continuous. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the code \cite{GH}.}
-    \label{fig:mode}
-\end{figure}
-
 Fig.\ \ref{fig:mode} illustrates how a generic mode function would look like, showing  the discontinuity in the conformal time. The behavior in the three regions of $\tau$ are discussed in detail in Ref.\ \cite{Fujita:2018}.
 We will use the mass function from Eq.\ 5 of Ref.\ \cite{Fujita:2018}
 \begin{equation}\label{eqn:mass_case}
@@ -540,16 +543,34 @@ We take the power spectrum from Eq.\ 14 of Ref.\ \cite{Fujita:2018}
 \begin{equation}\label{eqn:p_sfm}
     \mathcal{P}(\tau, k) \sim \frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{GR}(\tau,k)\ , 
 \end{equation}
-where $\mathcal{P}_{GR}$ is the power spectrum of the massless tensor modes from inflation, and $\nu$ is defined by 
+\hspace{-1em}where $\mathcal{P}_{GR}$ is the power spectrum of the massless tensor modes from inflation, and $\nu$ is defined by 
 \begin{equation}\label{eqn:nu}
     \nu = \sqrt{\frac{9}{4} - \frac{m^2}{H_{\inf}^2}}\ .
 \end{equation}
-This expression for the power spectrum is found by solving the equation of motion for the mode function and finding the expression for $\overline{h}_k$ deep in the massless phase (see Sec.\ III(iii) of Ref.\ \cite{Fujita:2018} for more details). We want to 
-As for the GR power spectrum, we can approximate it by using the transfer function detailed in Ref.\ \cite{Kuroyanagi:2015}. To briefly recount, the power spectrum in the GR case is 
+This expression for the power spectrum is found by solving the equation of motion for the mode function and finding the expression for $\overline{h}_k$ deep in the massless phase (see Sec.\ III(iii) of Ref.\ \cite{Fujita:2018} for more details). As for the GR power spectrum, we can approximate it by using the transfer function detailed in Ref.\ \cite{Kuroyanagi:2015}. To briefly recount, the power spectrum in the GR case is 
 \begin{equation}\label{eqn:p_gr_sfm}
     \mathcal{P}_{GR} = \mathcal{P}^{\text{prim}}_{T} T^2_T(k)
 \end{equation}
-\begin{figure}[ht!]
+where $\mathcal{P}^{\text{prim}}_{T}$ is the primordial tensor power spectrum 
+and $T_{T}$ is the transfer function describing the standard reheating scenario in which the universe had a short matter-dominated era after inflation before reheating ended. $\mathcal{P}^{\text{prim}}_{T}$ is defined in Eq.\ 7 of Ref.\ \cite{Kuroyanagi:2015} as follows
+\begin{equation}\label{eqn:pt}
+    \mathcal{P}_{T}^{\text{prim}}(k) = A_T(k_{\text{ref}})\left(\frac{k}{k_{\text{ref}}}\right)^{n_T}
+\end{equation}
+where $A_T(k_{\text{ref}})$ is the amplitude at the reference scale,
+\hspace{-1em}measured to be precisely $4.4\times 10^{10}$, and $n_T$ is the spectral index chosen to be 0. The reference scale $k_{\text{ref}}$ is chosen to be 0.01 Mpc$\/^{-1}$. $T_{T}$ is defined in Eq.\ 12 of Ref.\ \cite{Kuroyanagi:2015} in the following way
+\begin{equation}\label{eqn:tt}
+    T_T^2(k) = \Omega_m^2 \frac{g_*(T_\text{in})}{g_{*0}} \frac{g_{*s0}^{4/3}}{g_{*s}^{4/3}(T_{\text{in}})} \frac{9j_1^2(k\tau_0)}{(k\tau_0)^2}T_1^2(x_{\text{eq}}) T_2^2(x_R)
+\end{equation}
+where $g_{*}(T_\text{in})$ and $g_{*0}$ are the relativistic degrees of freedom at the inflation temperature scale and the present respectively, $g_{*s}(T_\text{in})$ and $g_{*s0}$ are their counterparts for entropy, $j_1(k\tau_0)$ is the 1st spherical Bessel function whose approximation $j_1(k\tau_0) \simeq 1/(\sqrt{2}k\tau_0)$ will be used, the fitting functions are empirically found to be $T_1^2(x) = 1+1.57x+3.42x^2$ and $T_2^2(x) = (1-0.22x^{1.5} + 0.65x^2)^{-1}$, and $x_i \equiv k/k_i$. The values for all of the constants and the forms of the functions are taken from Sec. 2.1 of Ref.\ \cite{Kuroyanagi:2015}. 
+Since we are interested in the energy density at the present, we consider $\Omega_{\text{GW},0}(f) = \Omega_\text{GW}(\tau_0,f)$
+\begin{equation}\label{eqn:om_gw_0}
+    \Omega_{\text{GW},0}(f) = \frac{\pi^2f^2}{3a_0^2 H_0^2}\frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{GR}(k) .
+\end{equation}
+In anticipation of our consideration of certain parameters in the next section, we look at the behavior of the energy density as a function of different parameters. Fig.\ \ref{fig:contours} shows how $\Omega_{\text{GW},0}$ varies with changing $f$ and $M_\text{GW}, \tau_m$, and $H_{\inf}$. We note that in Fig.\ \ref{fig:contours} for the topmost and bottommost plots where we are not varying $\tau_m$, we are taking the upper bound of $\tau_m$, which is determined by the Big Bang Nucleosynthesis (BBN) bounds and is given by Eq.\ 16 of Ref.\ \cite{Fujita:2018}
+\begin{equation}\label{eqn:tau_m_bbn}
+    \tau_m \lesssim 10^{10}\left(\frac{H_{\inf}}{10^{14} \GeV}\right)^{-2}\tau_r .
+\end{equation}
+\begin{figure}
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=.82\linewidth]{fig/fig4a.pdf}  
@@ -568,9 +589,16 @@ As for the GR power spectrum, we can approximate it by using the transfer functi
 \caption{We plot $\Omega_{\text{GW},0}$ as a function of $f$ and $M$ (top), $\tau_m$ (middle), and $H_{\inf}$ (bottom). The frequency ranges from the scale corresponding to matter-radiation inequality ($\sim 3\times10^{-16}$ Hz) to the inflationary UV cutoff ($\sim 2\times 10^8\left(\frac{H_{\inf}}{10^{14} \GeV}\right)^{1/2}$ Hz \cite{Fujita:2018}).} 
 \label{fig:contours}
 \end{figure}
-\hspace{-1em}where $\mathcal{P}^{\text{prim}}_{T}$ is the primordial tensor power spectrum 
-and $T_{T}$ is the transfer function describing the standard reheating scenario in which the universe had a short matter-dominated era after inflation before reheating ended. $\mathcal{P}^{\text{prim}}_{T}$ is defined 
-in Eq.\ 7 of Ref.\ \cite{Kuroyanagi:2015} as follows
+
+\section{Results}\label{sec:results}
+We now discuss the region of the parameter space that can potentially explain the signals from NG15. The constraints we can place on the SFM model based on NG15 are done by seeing how we can change the parameters $M_\text{GW}, H_{\inf},$ and $\tau_m$ to fit the signal. Our initial approach of fixing $H_{\inf}$ to $10^8 \GeV$, like in Ref.\ \cite{Fujita:2018} and letting $m$ and $\tau_m$ vary didn't produce any gravitational wave energy density from inflation that could possibly reproduce NG15. We see in the middle plot of Fig.\ \ref{fig:contours} that increasing $\tau_m$ uniformly increases the primordial energy density. We found that that we have to set $\tau_m$ to its maximum allowed value by the BBN bound, as described by Eq.\ \ref{eqn:tau_m_bbn} in order to be able to reproduce the NG15 signal.
+
+By varying the other two parameters, $M_{\text{GW}}$ and $H_{\inf}$, we found resulting energy densities that lie within $1\sigma$, $2\sigma$, and $3\sigma$ of the power law posterior of the signal. Our values for the parameters were $M_\text{GW} = 1.298H_{\inf}$ and $H_{\inf} = 0.47 \GeV$ to stay within $1\sigma$ of the posterior, $M_\text{GW} = 1.251H_{\inf}$ and $H_{\inf} = 5.2 \GeV$ to stay within $2\sigma$ of the posterior $M_\text{GW} = 1.201H_{\inf}$ and $H_{\inf} = 50.0 \GeV$ to stay within $3\sigma$ of the posterior. There are other combinations for the values of $M_GW$ and $H_{\inf}$ if we assume the graviton mass cuts off at an earlier time, but these are the values that we found to violate the BBN limits the least. 
+\begin{figure}[ht]
+    \includegraphics[width=\linewidth]{fig/fig9.pdf}
+    \caption{Posterior probability distribution of the GWB amplitude and spectral index for the NANOGrav data (orange). The value $\gamma_\text{GW}$ = 13/3 (dashed black line) represents the expected SMBHB spectrum. The amplitude is referenced to $f_{\text ref}$ = 1 yr$^{-1}$. The red, blue, and green curves represent the GWB spectra fitted to the $1\sigma$, $2\sigma$, and $3\sigma$ posterior of the signal.}
+    \label{fig:amp_spec}
+\end{figure}
 \onecolumngrid
 \begin{figure*}
 \includegraphics[width=\textwidth]{fig/fig8.pdf} 
@@ -578,55 +606,26 @@ in Eq.\ 7 of Ref.\ \cite{Kuroyanagi:2015} as follows
 \label{fig:GWB}
 \end{figure*}
 \twocolumngrid
-\begin{equation}\label{eqn:pt}
-    \mathcal{P}_{T}^{\text{prim}}(k) = A_T(k_{\text{ref}})\left(\frac{k}{k_{\text{ref}}}\right)^{n_T}
-\end{equation}
-where $A_T(k_{\text{ref}})$ is the amplitude at the reference scale,
-\hspace{-1em}measured to be precisely $4.4\times 10^{10}$, and $n_T$ is the spectral index chosen to be 0. The reference scale $k_{\text{ref}}$ is chosen to be 0.01 Mpc$\/^{-1}$. $T_{T}$ is defined in Eq.\ 12 of Ref.\ \cite{Kuroyanagi:2015} as follows 
-\begin{equation}\label{eqn:tt}
-    T_T^2(k) = \Omega_m^2 \frac{g_*(T_\text{in})}{g_{*0}} \frac{g_{*s0}^{4/3}}{g_{*s}^{4/3}(T_{\text{in}})} \frac{9j_1^2(k\tau_0)}{(k\tau_0)^2}T_1^2(x_{\text{eq}}) T_2^2(x_R)
-\end{equation}
-where $g_{*}(T_\text{in})$ and $g_{*0}$ are the relativistic degrees of freedom at the inflation temperature scale and the present respectively, $g_{*s}(T_\text{in})$ and $g_{*s0}$ are their counterparts for entropy, $j_1(k\tau_0)$ is the 1st spherical Bessel function whose approximation $j_1(k\tau_0) \simeq 1/(\sqrt{2}k\tau_0)$ will be used, the fitting functions are empirically found to be $T_1^2(x) = 1+1.57x+3.42x^2$ and $T_2^2(x) = (1-0.22x^{1.5} + 0.65x^2)^{-1}$, and $x_i \equiv k/k_i$. The values for all of the constants and the forms of the functions are taken from Sec. 2.1 of Ref.\ \cite{Kuroyanagi:2015}. 
 
-
-\begin{figure}[ht]
-    \includegraphics[width=\linewidth]{fig/fig9.pdf}
-    \caption{Posterior probability distribution of GWB amplitude and spectral exponent for the NANOGrav data. The value $\gamma_\text{GW}$ = 13/3 (dashed black line) represents the expected SMBHB spectrum. The amplitude is referenced to $f_{\text ref}$ = 1 yr$^{-1}$ (orange). The red, blue, and green curves represent the GWB spectra fitted to the $1\sigma$, $2\sigma$, and $3\sigma$ posterior of the signal.}
-    \label{fig:amp_spec}
-\end{figure}
-
-Since we are interested in the energy density at the present time, we consider $\Omega_{\text{GW},0}(f) = \Omega_\text{GW}(\tau_0,f)$, which is now
-\begin{equation}\label{eqn:om_gw_0}
-    \Omega_{\text{GW},0}(f) = \frac{\pi^2f^2}{3a_0^2 H_0^2}\frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{GR}(k) .
-\end{equation}
-In anticipation of our consideration of certain parameters in the next section, we look at the behavior of the energy density as a function of different parameters. Fig.\ \ref{fig:contours} shows how $\Omega_{\text{GW},0}$ varies with changing $f$ and $M_\text{GW}, \tau_m$, and $H_{\inf}$. We note that in Fig.\ \ref{fig:contours} for the topmost and bottommost plots where we are not varying $\tau_m$, we are taking the upper bound of $\tau_m$, which is determined by the Big Bang Nucleosynthesis (BBN) bounds and is given by Eq.\ 16 of Ref.\ \cite{Fujita:2018}
-\begin{equation}\label{eqn:tau_m_bbn}
-    \tau_m \lesssim 10^{10}\left(\frac{H_{\inf}}{10^{14} \GeV}\right)^{-2}\tau_r
-\end{equation}
-
-\section{Results}\label{sec:results}
-We now discuss the region of the parameter space  that can potentially explain the signals from NG15. 
-
-The constraints we can place on the SFM model based on NG15 are done by seeing how we can change the parameters $M_\text{GW}, H_{\inf},$ and $\tau_m$ to fit the signal. Based on the contours in Fig.\ \ref{fig:contours}, we were able reproduce the NG15 signal by varying the parameters so that the resulting energy density lies within $1\sigma$, $2\sigma$, and $3\sigma$ of the power law posterior of the signal. We assumed that $\tau_m$ took on its maximum value allowed by the BBN bounds, from Eq.\ \ref{eqn:tau_m_bbn}, because increasing $\tau_m$ causes the energy density to uniformly increase, which gets us closer to the signal by being as far as we can from getting an imaginary energy density. This comes out to be $M_\text{GW} = 1.298H_{\inf}$ and $H_{\inf} = 0.47 \GeV$ to stay within $1\sigma$ of the posterior, $M_\text{GW} = 1.251H_{\inf}$ and $H_{\inf} = 5.2 \GeV$ to stay within $2\sigma$ of the posterior $M_\text{GW} = 1.201H_{\inf}$ and $H_{\inf} = 50.0 \GeV$ to stay within $3\sigma$ of the posterior. There are other combinations for the values of $M_GW$ and $H_{\inf}$ if we assume the graviton mass cuts off at a different time, but these are the values that we found to violate the BBN limits the least. 
-
+$\,$
+~\\ ~\\
 \section{Discussion}\label{sec:discussion}
 
 In this paper, we discussed how the constant mass and step function mass models of massive gravity can be constrained by the 15-year NANOGrav data set. We note that the selection of the parameters in the step function mass model leads to energy densities that violate the BBN bound for higher frequencies, specifically in the region of frequencies $\gtrsim 10^{-6}$ Hz. We propose that there could be some mechanism that suppresses the energy density of gravitational waves from the primordial era for those frequencies. A mechanism analogous to the damping of the energy density from the free-streaming neutrinos \cite{Weinberg:2004} could be behind such a suppression necessary to obey the BBN bound. 
 
-Observations of gravitational waves have mostly ruled out the possibility of gravitons with a very low but nonzero mass, since the expectation that a peak could be present for lower and lower frequencies is becoming more
-\begin{figure}[ht!]
+Observations of gravitational waves have mostly ruled out the possibility of gravitons with a very low but nonzero mass, since the expectation that a peak could be present for lower and lower frequencies is becoming slim, albeit still possible. Therefore, the more plausible possibility of massive gravity is the scenario in which the graviton mass is a non-constant function of time. We have only considered a step function as the time dependent function, but more complicated functions are possible. The mechanism behind such a mass decay would come from the exact nature of the phase transition of the gravitational field. It may be interesting to pursue an investigation to place constraints on the specific evolution of the mass during the phase transition. Then, we would be able to probe the mass evolution and shed insight into the time dependent behavior beyond a step function. 
+\begin{figure}[ht]
     \includegraphics[width=\linewidth]{fig/fig7.pdf}
     \caption{The energy densities in Fig.\ \ref{fig:GWB} plotted over the whole frequency range specified in Fig.\ \ref{fig:contours}. The red, blue, and green curves correspond to the energy densities of the same color in Fig.\ \ref{fig:GWB}. The turquoise curve below the energy densities is the sensitivity curve for NANOGrav. The suppression takes place right before the energy density surpasses the BBN bound.}
     \label{fig:supp}
 \end{figure}
-slim, albeit still possible. Therefore, the more plausible possibility of massive gravity is the scenario in which the graviton mass is a non-constant function of time. We have only considered a step function as the time dependent function, but more complicated functions are possible. The mechanism behind such a mass decay would come from the exact nature of the phase transition of the gravitational field. It may be interesting to pursue an investigation to place constraints on the specific evolution of the mass during the phase transition. Then, we would be able to probe the mass evolution and shed insight into the time dependent behavior beyond a step function. 
 
 Additionally, further observations that place constraints on the Hubble rate of expansion, the scale factor, and the time associated with inflation would be able to refute or confirm our theory. Another limitation comes from the fact that the BBN bound is defined in terms of a logarithmic integral of the whole frequency interval of the energy density. The suppression we propose is flat in the log-log scale, which would lead to a non-trivial bound from BBN. In addition to signals we have already observed with interferometers, we expect a more drastic suppression for higher frequencies than we discuss. Future work may investigate the nature of this suppression and propose plausible mechanisms for it.
 
 \vspace{2mm}
 {\bf Data availability}---Source code to reproduce all of the figures in this paper is located in our corresponding Github repository \cite{GH}. 
-\vspace{2mm}
 
+\vspace{2mm}
 {\bf Acknowledgements}---We thank Prof.\ Shinji Mukohyama and Prof.\ Sachiko Kuroyanagi for insightful discussions on the nature of their models. We thank Emma Clarke for help with the data, and we thank Sayan Mandal for useful comments.
 
 \bibliographystyle{apsrev4-2_edited}
