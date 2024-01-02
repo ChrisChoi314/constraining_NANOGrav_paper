@@ -1,5 +1,5 @@
-# Stochastic Gravitational Wave Background Detection through NANOGrav 15-year Data Set in the View of Massive Gravity
+# Identifying Best Practices for Future Pandemic Preparedness: A Comparative Policy Analysis
 
-LaTeX source for the paper "Stochastic Gravitational Wave Background Detection through NANOGrav 15-year Data Set in the View of Massive Gravity".
+LaTeX source for the paper "Identifying Best Practices for Future Pandemic Preparedness: A Comparative Policy Analysis".
 
-To see the corresponding source code for the paper, see the repository [constrain_mass_nanograv_15](https://github.com/ChrisChoi314/constrain_mass_nanograv_15).
+To see the preprint link for the paper, the paper on [SocArXiv], link to be added later. 
