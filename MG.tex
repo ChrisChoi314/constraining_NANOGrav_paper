@@ -526,11 +526,12 @@ The scale factor, as described in Eq.\ 4 of Ref.\ \cite{Fujita:2018ehq}, is
 \begin{equation}\label{eqn:scale_fac}
     a(\tau) = 
     \begin{cases}
-        -1/(H_{\inf}\tau) & \tau < \tau_r \\
+        -1/(H_{\inf}\tau) & \tau < -\tau_r \\
         a_r \tau/\tau_r & \tau > \tau_r \\
    \end{cases} \ ,
 \end{equation}
 where $H_{\inf}$ is the Hubble parameter during inflation when the scale corresponding to the CMB exits the Hubble horizon and $a_r$ is the scale factor at the reheating time $\tau_r = 1/(a_r H_{\inf})$. We will assume $a_r$ is fixed in this discussion, while $H_{\inf}$ and $\tau_r$ may vary. The bounds on $H_{\inf}$ are discussed in Ref.\ \cite{Jiang:2015qor}, and they will be respected in this paper. The scale factor in this model has a peculiar behavior where it is not defined in the region $(-\tau_r, \tau_r)$ and only takes values outside of that interval. This is to allow for the scale factor and its first derivative to be continuous and to avoid the singularity at $\tau = 0$. Fig.\ \ref{fig:mode} illustrates how a generic mode function would look like, showing  the discontinuity in the conformal time. The behavior in the three regions of $\tau$ are discussed in detail in Ref.\ \cite{Fujita:2018ehq}.
+
 We model the graviton mass as the function given in Eq.\ 5 of Ref.\ \cite{Fujita:2018ehq}
 \begin{equation}\label{eqn:mass_case}
     M_\text{GW}(\tau) = 
@@ -539,7 +540,7 @@ We model the graviton mass as the function given in Eq.\ 5 of Ref.\ \cite{Fujita
         0 & \tau > \tau_m
    \end{cases} \ ,
 \end{equation} 
-where $\tau_m$ is the conformal time when the graviton mass instantaneously drops to 0. This is the simplest scheme for time-dependence of the graviton mass, and despite its non-physical nature, it will suffice for our purposes to demonstrate the relevant aspects of the theory.  
+where $\tau_m$ is the conformal time when the graviton mass instantaneously drops to 0. A smoothly decaying function would be preferred, but the exact form of this function is highly model dependent and can depend on the dynamics of other fields, for example some scalar field $\mu(\phi(\tau))$. The general phenomenological aspects of a theory of massive gravity with a time dependent graviton mass can still be explored with the simplest scheme for time-dependence, a step function model, with the benefit of simplifying numerical calculations and avoiding the intricacies coming from model dependent scalar fields.
 
 \section{Energy Density of gravitational waves}\label{sec:energy}
 When we study models of gravity, we often have to determine how GWs from the primordial era are influenced by deviations from GR. The energy density spectrum of these GWs at the present time as a function of frequency is perhaps the most practical way to observe the effects of beyond-GR theories. We want to look at the energy fraction of the GWs per logarithmic interval of $k$ at the current time. We have the following definition for the energy density 
@@ -579,30 +580,17 @@ Since we are interested in the energy density at the present, we consider $\Omeg
 \begin{equation}\label{eqn:om_gw_0}
     \Omega_{\text{GW},0}(f) = \frac{\pi^2f^2}{3a_0^2 H_0^2}\frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{\text{GR}}(k) \ .
 \end{equation}
-In anticipation of our consideration of certain parameters in the next section, we look at the behavior of the energy density as a function of different parameters. Fig.\ \ref{fig:contours} shows how $\Omega_{\text{GW},0}$ varies with changing $f$ and $M_{\text{GW}}, \tau_m$, and $H_{\inf}$. We note that in Fig.\ \ref{fig:contours} for the topmost and bottommost plots where we are not varying the ratio $\tau_m/\tau_r$, but for the bottom subplot, we are varying it indirectly since $\tau_r$ changes with $H_{\inf}$.
+In anticipation of our consideration of certain parameters in the next section, we look at the behavior of the energy density as a function of different parameters. Fig.\ \ref{fig:contours} shows how $\Omega_{\text{GW},0}$ varies with changing $m$, $\tau_m$, and $H_{\inf}$. We note that in Fig.\ \ref{fig:contours} for the topmost and bottommost plots where we are not varying the ratio $\tau_m/\tau_r$, but for the bottom subplot, we are varying it indirectly since $\tau_r$ changes with $H_{\inf}$.
 
-To comment on the shape of the energy density predicted by inflation, we note that there is a change in the slope in the low frequency range, visible near $10^{-17}$ Hz in Fig.\ \ref{fig:contours} and more clearly Fig.\ \ref{fig:supp}. This can be explained by the fact that modes with a sufficiently low frequency have not entered the cosmological horizon. The equation of motion from Eq.\ \ref{eqn:eom} allows for a growing solution of $\overline{h}_k \propto a$ \cite{Gumrukcuoglu:2012wt}. This causes the energy density to grow as the frequency of the mode becomes lower past the point of horizon reentry. 
+In order to find the region in the parameter space that is able to produce the energy density observed in NG15, we obtain the parameters that fall within 1-3 $\sigma$ of the NG15 at the lower and upper bound of frequency. Fig.\ \ref{contours} shows a small region, in orange, in each plot that corresponds to these energy densities for a particular set of parameters. By looking at the energy density dependence on $m, \tau_m$, and $H_{\inf}$, we are able to find the parameters that reproduce the signal.
+
 
 \section{Results}\label{sec:results}
-We now discuss the region of the parameter space that can potentially explain the signals from NG15. The constraints we can place on the SFM based on NG15 are done by seeing how we can change the parameters $M_{\text{GW}}, H_{\inf},$ and $\tau_m$ to fit the signal. Our initial approach of fixing $H_{\inf}$ to $10^8 \GeV$, like in Ref.\ \cite{Fujita:2018ehq} and letting $m$ and $\tau_m$ vary did not produce any energy density from inflation that could possibly reproduce NG15. We see in the middle plot of Fig.\ \ref{fig:contours} that increasing $\tau_m$ uniformly increases the primordial energy density. 
+We now discuss the region of the parameter space that can potentially explain the signals from NG15. The constraints we can place on the SFM based on NG15 are done by seeing how we can change the parameters $M_{\text{GW}}, \tau_m$ and $H_{\inf}$ to fit the signal. Our initial approach of fixing $H_{\inf}$ to $10^8 \GeV$, like in Ref.\ \cite{Fujita:2018ehq} and letting $m$ and $\tau_m$ vary did not produce any energy density from inflation that could possibly reproduce NG15. We see in the middle plot of Fig.\ \ref{fig:contours} that increasing $\tau_m$ uniformly increases the primordial energy density, at the frequency bounds chosen. 
 
 \begin{figure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.88\linewidth]{fig2a.pdf}  
-  \label{fig:contour-a}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.88\linewidth]{fig2b.pdf}  
-  \label{fig:contour-b}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.88\linewidth]{fig2c.pdf}  
-  \label{fig:contour-c}
-\end{subfigure}
-\caption{We plot $h_0^2\Omega_{\text{GW},0}$ as a function of $f$ and $m$ (top), $\tau_m$ (middle), and $H_{\inf}$ (bottom). The frequency ranges from the scale corresponding to matter-radiation inequality ($\sim 3\times10^{-16}$ Hz) to the inflationary UV cutoff ($\sim 1/(2\pi\tau_r)$ \cite{Fujita:2018ehq}).} 
+\includegraphics[width=\linewidth]{fig2.pdf}
+\caption{We plot $h_0^2\Omega_{\text{GW},0}$ as a function of $m/H_{\inf}$ (top), $\tau_m/\tau_r$ (middle), and $H_{\inf}$ (bottom). The solid lines are the energy densities at the lower bound of NG15, $f_{\rm low} \approx 1.98\times 10^{-9}$ Hz, and the dotted lines are at the lower bound of NG15, $f_{\rm high} \approx 5.93\times 10^{-8}$ Hz. The orange region on each line is the area in the parameter space that produces the observed NG15 energy densities within $1-3\sigma$ of uncertainty.}
 \label{fig:contours}
 \end{figure}
 
@@ -633,7 +621,7 @@ We note that if we still wish to conservatively respect the BBN bound in the sam
 
 \begin{figure}[ht]
     \includegraphics[width=\linewidth]{fig4.pdf}
-    \caption{The energy densities in Fig.\ \ref{fig:GWB} plotted over the frequency range specified in Fig.\ \ref{fig:contours}. The red, blue, green, purple, and golden curves correspond to the energy densities of the same color in Fig.\ \ref{fig:GWB}. The turquoise curve below the energy densities is the sensitivity curve for NG15. The blue shaded region on the left is the excluded region from the CMB bound. The BBN bound region may be ignored if the graviton remains massive during BBN.} 
+    \caption{The energy densities in Fig.\ \ref{fig:GWB} plotted over the frequency range from the scale corresponding to matter-radiation inequality ($\sim 3\times10^{-16}$ Hz) to the inflationary UV cutoff ($\sim 1/(2\pi\tau_r)$ \cite{Fujita:2018ehq}). The red, blue, green, purple, and golden curves correspond to the energy densities of the same color in Fig.\ \ref{fig:GWB}. The turquoise curve below the energy densities is the sensitivity curve for NG15. The blue shaded region on the left is the excluded region from the CMB bound. The BBN bound region may be ignored if the graviton remains massive during BBN.} 
     \label{fig:supp}
 \end{figure}
 
