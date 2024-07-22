@@ -522,7 +522,7 @@ where $\overline{h}_k = ah_k$, the primes ($\,'$) have been redefined to indicat
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.75]{fig1.pdf}
-\caption{Evolution of the real part of $\overline{h}_k(\tau)$. \red{We note that conformal time jumps from $-\tau_r$ to $\tau_r$.}. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the source code \cite{GH}.}
+\caption{Evolution of the real part of $\overline{h}_k(\tau)$. \red{Note that conformal time jumps from $-\tau_r$ to $\tau_r$}. This is a numerical solution to Eq.\ \ref{eqn:eom}, and the exact values for the parameters are detailed in the source code \cite{GH}.}
  \label{fig:mode}
 \end{figure}
 
@@ -535,7 +535,7 @@ The scale factor, as described in Eq.\ 4 of Ref.\ \cite{Fujita:2018ehq}, is
         a_r \tau/\tau_r & \tau > \tau_r \\
    \end{cases} \ ,
 \end{equation}
-where $H_{\inf}$ is the Hubble parameter during inflation when the scale corresponding to the CMB exits the Hubble horizon and $a_r$ is the scale factor at the reheating time $\tau_r = 1/(a_r H_{\inf})$. We will assume $a_r$ is fixed in this discussion, while $H_{\inf}$ and $\tau_r$ may vary. The bounds on $H_{\inf}$ are discussed in Ref.\ \cite{Jiang:2015qor}, and they will be respected in this paper. \red{The conformal time jumps in value from $-\tau_r$ to $\tau_r$, This is to allow for the scale factor and its first $\tau$ derivative to remain continuous.} Fig.\ \ref{fig:mode} illustrates how a generic mode function would look like. The behavior in the three regions of $\tau$ is discussed in detail in Ref.\ \cite{Fujita:2018ehq}.
+where $H_{\inf}$ is the Hubble parameter during inflation when the scale corresponding to the CMB exits the Hubble horizon and $a_r$ is the scale factor at the reheating time $\tau_r = 1/(a_r H_{\inf})$. We will assume $a_r$ is fixed in this discussion, while $H_{\inf}$ and $\tau_r$ may vary. The bounds on $H_{\inf}$ are discussed in Ref.\ \cite{Jiang:2015qor} and will be respected in this paper. \red{The conformal time jumps in value from $-\tau_r$ to $\tau_r$. This is to allow for the scale factor and its first $\tau$ derivative to remain continuous.} Fig.\ \ref{fig:mode} illustrates what a generic mode function looks like. The behavior in the three regions of $\tau$ is discussed in detail in Ref.\ \cite{Fujita:2018ehq}.
 
 We model the graviton mass as the function given in Eq.\ 5 of Ref.\ \cite{Fujita:2018ehq}
 \begin{equation}\label{eqn:mass_case}
@@ -545,20 +545,29 @@ We model the graviton mass as the function given in Eq.\ 5 of Ref.\ \cite{Fujita
         0 & \tau > \tau_m
    \end{cases} \ ,
 \end{equation} 
-where $\tau_m$ is the conformal time when the graviton mass instantaneously drops to 0. \red{A smoothly decaying function would be preferred, but the exact form of this function is highly model dependent and can depend on the dynamics of other fields, for example, some scalar field $\mu(\phi(\tau))$. The general phenomenological aspects of a theory of MG with a time-dependent graviton mass can still be explored with the simplest scheme for time-dependence, the step function, with the benefit of simplifying numerical calculations and avoiding the intricacies coming from model dependent scalar fields. Thus, we proceed with the SFM model.}
+where $\tau_m$ is the conformal time when the graviton mass instantaneously drops to 0. \red{A smoothly decaying function would be preferred, but the exact form of this function is highly model-dependent and can depend on the dynamics of other fields, for example, some scalar field $\mu(\phi(\tau))$. The general phenomenological aspects of a theory of MG with a time-dependent graviton mass can still be explored with the simplest scheme for time-dependence, the step function, with the benefit of simplifying numerical calculations and avoiding the intricacies related to the model-dependent scalar fields. Thus, we choose to study the SFM model.}
 
 \section{Energy Density of gravitational waves}\label{sec:energy}
 When we study models of gravity, we often have to determine how GWs from the primordial era are influenced by deviations from GR. The energy density spectrum of these GWs at the present time as a function of frequency is perhaps the most practical way to observe the effects of beyond-GR theories. We want to look at the energy fraction of the GWs per logarithmic interval of $k$ at the current time. We have the following definition for the energy density 
 \begin{equation}\label{eqn:omega_sfm}
     \Omega_\text{GW} = \frac{1}{\rho_c}\frac{d \rho_\text{GW}} {d \log{k}} \ ,
 \end{equation}
-where $\rho_c = 3H^2/8\pi G$ is the critical density, and we note that the derivative with respect to $\log k$ is a notational way of representing the spectral density of $\rho_\text{GW}$ (see Footnote 65 of Ref.\ \cite{Maggiore:v1}). Our energy density today is defined in terms of the primordial tensor power spectrum $\mathcal{P}_0(f)$ as detailed in Eq.\ 19.288 of Ref.\ \cite{Maggiore:v2}
+where $\rho_c = 3H^2/8\pi G$ is the critical density, and we note that the derivative with respect to $\log k$ is a notational way of representing the spectral density of $\rho_\text{GW}$ (see Footnote 65 of Ref.\ \cite{Maggiore:v1}). Our energy density today is defined in terms of the primordial tensor power spectrum $\mathcal{P}_0(f) := \mathcal{P}(\tau_0, f)$ as detailed in Eq.\ 19.288 of Ref.\ \cite{Maggiore:v2}
 \begin{equation}\label{eqn:omega_0_sfm}
     \Omega_{\text{GW},0}(f) = \frac{\pi^2}{3a_0^2H_0^2}f^2 \mathcal{P}_0(f) \ , 
 \end{equation}
-where $a_0 = a(\tau_0) = 1$. We will find the power spectrum in MG by finding the form of the enhancement factor that will amplify the GR power spectrum.  
-
-We take the power spectrum from Eq.\ 14 of Ref.\ \cite{Fujita:2018ehq}
+where $a_0 = a(\tau_0) = 1$. We will find the power spectrum in MG by finding the form of the enhancement factor that will amplify the GR power spectrum. The power spectrum in general is defined as 
+\begin{equation} \label{eqn:power_spec}
+    \mathcal{P}(\tau,k) = \frac{4k^3 |v_k(\tau)|^2}{\pi^2 M_{\rm Pl}^2 a^2(\tau)}
+\end{equation}
+\red{We are interested in $v_k(\tau)$ when it is in the massless regime, for large $\tau$. Solving the EoM (\ref{eqn:eom}), applying the appropriate intial and boundary conditions, leads to the following: \begin{equation} \label{eqn:mode_phase_3}
+        v_k^{\rm (iii)}(\tau) = \frac{2}{k}\sqrt{\frac{m\tau_m}{\pi H_{\inf} \tau_r^2}}\left[D_1 \cos(k\tau) + D_2 \sin(k\tau) \right].
+    \end{equation}
+where $D_1 = -\sin(k\tau_m)[C_2\cos(\Lambda + \pi/8) - C_1 \sin(\Lambda -\pi/8)]$, $D_2 = \cos(k\tau_m)[C_2\cos(\Lambda + \pi/8) - C_1 \sin(\Lambda -\pi/8)]$, $C_{1,2} = -i\sqrt{\pi} 2^{-\frac{\tau}{2}+\nu}(k\tau_r)^{-\nu}\Gamma(\nu)[\frac{2m}{H_{\inf}}J_{\mp \frac{3}{4}}(\frac{m}{2H_{\inf}})\pm (1-2\nu)J_{\pm \frac{1}{4}}(\frac{m}{2H_{\inf}}) ] $, and $\Lambda = m\tau_m^2/(2H_{\inf}\tau_r^2)$ \cite{Fujita:2018ehq}. With the assumptions that $m/H_{\rm inf} \approx \mathcal{O}(1)$ and $\Lambda \gg k\tau_m$, we find that the squared amplitude of the mode function in the massless phase is approximately 
+\begin{equation}\label{eqn:mode_squared}
+    |v_k(\tau)|^2 \sim \frac{\tau_m}{2}(k \tau_r)^{-2\nu - 2}.
+\end{equation}
+Thus, we find that the power spectrum in MG, in terms of the GR power spectrum, is }
 \begin{equation}\label{eqn:p_sfm}
     \mathcal{P}(\tau, k) \sim \frac{\tau_m}{\tau_r}(k\tau_r)^{3-2\nu}\mathcal{P}_{\text{GR}}(\tau,k)\ , 
 \end{equation}
@@ -571,7 +580,7 @@ This expression for the power spectrum is found by solving the equation of motio
     \mathcal{P}_{\text{GR}} = \mathcal{P}^{\text{prim}}_{T} T^2_T(k) \ ,
 \end{equation}
 where $\mathcal{P}^{\text{prim}}_{T}$ is the primordial tensor power spectrum 
-and $T_{T}$ is the transfer function describing the standard reheating scenario in which the universe had a short matter-dominated era after inflation before reheating ended. $\mathcal{P}^{\text{prim}}_{T}$ is defined in Eq.\ 7 of Ref.\ \cite{Kuroyanagi:2014nba} as follows
+and $T_{T}$ is the transfer function describing the \red{standard cosmological scenario}. $\mathcal{P}^{\text{prim}}_{T}$ is defined in Eq.\ 7 of Ref.\ \cite{Kuroyanagi:2014nba} as follows
 \begin{equation}\label{eqn:pt}
     \mathcal{P}_{T}^{\text{prim}}(k) = A_T(k_{\text{ref}})\left(\frac{k}{k_{\text{ref}}}\right)^{n_T} \ ,
 \end{equation}
@@ -632,6 +641,8 @@ We note that if we still wish to conservatively respect the BBN bound in the sam
 
 \section{Discussion}\label{sec:discussion}
 In this paper, we discussed how the step function mass model of MG can reproduce NG15. We note that the selection of the parameters in the step function mass model leads to energy densities that violate the BBN bound for higher frequencies, specifically in the region of frequencies approximately greater than $10^{-6}$ Hz. We propose that there could be some mechanism that suppresses the energy density of GWs from the primordial era for those frequencies. A mechanism analogous to the damping of the energy density from the free-streaming neutrinos \cite{Durrer:1997ta,Weinberg:2003ur} could be behind such a suppression necessary to obey the BBN bound, if this model of MG is to be the dominant source of the background. For example, the propagation of GWs in the turbulent primordial radiation-dominated plasma\footnote{Turbulent sources induce GWs through their anisotropic stress tensor, with $\Omega_{\rm GW} \propto f^{-8/3}$ for high frequencies.} \cite{RoperPol:2019wvy} may provide the necessary suppression at the short wavelength regime \cite{Deryagin:1986}. 
+
+\red{The values for $H_{\inf}$ we find that reproduce the SGWB are very low. However, models of inflation with such a low $H_{\inf}$ do exist. For example, a low-scale supersymmetry model with an inflaton field identified with the Higgs boson was proposed in Ref.\ \cite{Nakayama:2011ri}. Such a model is an extension of the standard model including three right-handed neutrinos and the Higgs boson responsible for breaking the $U(1)_{B-L}$ symmetry. In addition, Ref.\ \cite{Takahashi:2018tdu} proposes a model of inflation with $H_{\inf}$ on the order of $10^{-4}$ to $10^{-1}$ GeV. Such a model requires, however, a more precise treatment of the parameters to achieve reheating, as well as a weaker coupling to standard model particles to avoid excessive flatness of the inflaton potential. Additionally, implications of the non-MG inflationary origin of the SGWB have been explored in Ref.\ \cite{EPTA:2023xxk}, which suggest that non-standard inflationary theories are required if they are to explain the SGWB, including features like breaking the slow-roll consistency relation and having a blue-tilted spectrum, which MTMG exactly provides.}
 
 Observations of GWs have placed progressively tighter constraints on the possibility of gravitons with a very low but constant nonzero mass \cite{Bernardo:2023mxc, Wu:2023rib, Wang:2023div, deRham:2016nuf}, including much lower bounds with time-independent MTMG \cite{DeFelice:2021trp, DeFelice:2023bwq}. Therefore, the more plausible possibility of MG is the scenario in which the graviton mass is a function of time. We have only considered a step function as the time-dependent function, but more complicated functions are possible. The mechanism behind such a mass decay would come from the exact nature of the phase transition of the gravitational field. It may be fruitful to pursue an investigation to place constraints on the specific evolution of the mass during the phase transition. Then, we would be able to probe the mass evolution and shed insight into the time-dependent behavior beyond a step function. 
 
