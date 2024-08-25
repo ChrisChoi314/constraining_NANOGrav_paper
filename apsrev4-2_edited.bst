@@ -1533,6 +1533,7 @@ FUNCTION {names.comma}
   "," *
 }
 
+
 FUNCTION {format.names}
 { 'bibinfo :=
   duplicate$ empty$ { pop$ "" } {
@@ -1570,10 +1571,6 @@ FUNCTION {format.names}
                 { 't := }
                 { pop$ }
               if$
-              numnames #2 >
-                  'names.comma
-                  'skip$
-                if$
                 t "others" =
                   {
                     " " *
