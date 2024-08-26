@@ -1533,7 +1533,6 @@ FUNCTION {names.comma}
   "," *
 }
 
-
 FUNCTION {format.names}
 { 'bibinfo :=
   duplicate$ empty$ { pop$ "" } {
@@ -2690,7 +2689,7 @@ FUNCTION {article}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint.controlled output
+  %format.eprint.controlled output
   format.translation output
   fin.entry
 }
@@ -2738,7 +2737,7 @@ FUNCTION {book}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2760,7 +2759,7 @@ FUNCTION {booklet}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2812,7 +2811,7 @@ FUNCTION {inbook}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2837,7 +2836,7 @@ FUNCTION {incollection}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2862,7 +2861,7 @@ FUNCTION {inproceedings}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2883,7 +2882,7 @@ FUNCTION {manual}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2905,7 +2904,7 @@ FUNCTION {mastersthesis}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2924,7 +2923,7 @@ FUNCTION {misc}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2946,7 +2945,7 @@ FUNCTION {phdthesis}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -2991,7 +2990,7 @@ FUNCTION {proceedings}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -3012,7 +3011,7 @@ FUNCTION {techreport}
   new.block.comma
   new.sentence.comma
   format.note output
-  format.eprint output
+  %format.eprint output
   fin.entry
 }
 
@@ -3021,7 +3020,7 @@ FUNCTION {unpublished}
   format.authors "author" output.check
   author format.key output
   article.title.produce
-  format.eprint output
+  %format.eprint output
   format.date.output
   new.block.comma
   new.sentence.comma
