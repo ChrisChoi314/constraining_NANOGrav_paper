@@ -3011,7 +3011,7 @@ FUNCTION {techreport}
   new.block.comma
   new.sentence.comma
   format.note output
-  %format.eprint output
+  format.eprint output
   fin.entry
 }
 
@@ -3020,7 +3020,7 @@ FUNCTION {unpublished}
   format.authors "author" output.check
   author format.key output
   article.title.produce
-  %format.eprint output
+  format.eprint output
   format.date.output
   new.block.comma
   new.sentence.comma
